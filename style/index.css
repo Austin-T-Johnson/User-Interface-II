@@ -525,3 +525,53 @@ button a {
 	color: white;
 
 }
+
+@media (max-width: 800px) {
+
+	header {
+		height: 30vh;
+		width: 100%;
+		background-position: bottom;
+	}
+
+	#project-links {
+		height: 70vh;
+		width: 100vw;
+		margin-left: 0%;
+		display: flex;
+
+
+
+
+	}
+
+	.project-left-top {
+		height: 30vh;
+		width: 30vh;
+
+	}
+
+	.project-right-top {
+		height: 30vh;
+		width: 30vh;
+
+	}
+
+	.project-left-bottom {
+		height: 30vh;
+		width: 30vh;
+
+	}
+
+	.project-right-bottom {
+		height: 30vh;
+		width: 30vh;
+
+	}
+
+	.card1 {
+		width: 15vw;
+		height: 15vh;
+		padding-top: 7%;
+	}
+}
