@@ -274,7 +274,28 @@ button a {
 	border: 5px solid black;
 	border-radius: 5%;
 }
+.fvr-txt {
+	position:relative;
+	width: 40vh;
+	height:39vh;
+	top:0;
+	left:0;
+	background-color: rgba(0,0,0,0.6);
+	color:#ffffff;
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content:center ;
+	font-size:4rem;
+	opacity: 0;
+	transition: opacity 0.25s;
+	}
 
+	.fvr-txt:hover {
+		opacity: 1;
+	}
+
+	
 .project-right-top {
 	height: 40vh;
 	width: 40vh;
@@ -283,7 +304,26 @@ button a {
 	border: 5px solid black;
 	border-radius: 5%;
 }
+.ca-txt {
+	position:relative;
+width: 40vh;
+height:39vh;
+top:0;
+left:0;
+background-color: rgba(0,0,0,0.6);
+color:#ffffff;
+display:flex;
+flex-direction: column;
+align-items: center;
+justify-content:center ;
+font-size:4rem;
+opacity: 0;
+transition: opacity 0.25s;
+}
 
+.ca-txt:hover {
+	opacity: 1;
+}
 .project-left-bottom {
 	height: 40vh;
 	width: 40vh;
@@ -291,6 +331,26 @@ button a {
 	background-size: cover;
 	border: 5px solid black;
 	border-radius: 5%;
+}
+.bh-txt {
+	position:relative;
+width: 40vh;
+height:39vh;
+top:0;
+left:0;
+background-color: rgba(0,0,0,0.6);
+color:#ffffff;
+display:flex;
+flex-direction: column;
+align-items: center;
+justify-content:center ;
+font-size:4rem;
+opacity: 0;
+transition: opacity 0.25s;
+}
+
+.bh-txt:hover {
+	opacity: 1;
 }
 
 .project-right-bottom {
@@ -301,7 +361,26 @@ button a {
 	border: 5px solid black;
 	border-radius: 5%;
 }
+.sf-txt {
+	position:relative;
+width: 40vh;
+height:39vh;
+top:0;
+left:0;
+background-color: rgba(0,0,0,0.6);
+color:#ffffff;
+display:flex;
+flex-direction: column;
+align-items: center;
+justify-content:center ;
+font-size:4rem;
+opacity: 0;
+transition: opacity 0.25s;
+}
 
+.sf-txt:hover {
+	opacity: 1;
+}
 .text p {
 	border: 2px solid black;
 	font-family: 'Kayak Sans';
