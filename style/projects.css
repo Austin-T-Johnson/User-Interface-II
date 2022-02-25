@@ -385,5 +385,20 @@ button a {
 	}
    }
 
+@media (max-width: 800px) {
+	html {
+		height:100%;
+	}
+	footer {
+		margin-top: 15%;
+	}
+}
 
-
+@media (max-width: 500px) {
+	h1 {
+		text-align: center;
+	}
+	footer {
+		margin-top: 35%;
+	}
+}
