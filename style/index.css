@@ -634,6 +634,7 @@ transition: opacity 0.25s;
 	.ca-txt {
 		width: 40vh;
 		height:29vh;
+		text-align: center;
 	}
 	.project-left-bottom {
 		height: 30vh;
@@ -642,6 +643,7 @@ transition: opacity 0.25s;
 	.bh-txt {
 		width: 40vh;
 		height:29vh;
+		font-size: 2.3rem;
 	}
 
 	.project-right-bottom {
