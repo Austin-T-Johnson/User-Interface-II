@@ -333,7 +333,7 @@ transition: opacity 0.25s;
 	border-radius: 5%;
 }
 .bh-txt {
-	position:relative;
+position:relative;
 width: 40vh;
 height:39vh;
 top:0;
@@ -622,21 +622,36 @@ transition: opacity 0.25s;
 		width: 30vh;
 
 	}
-
+	.fvr-txt {
+		width: 40vh;
+		height:29vh;
+	}
 	.project-right-top {
 		height: 30vh;
 		width: 30vh;
 
 	}
-
+	.ca-txt {
+		width: 40vh;
+		height:29vh;
+	}
 	.project-left-bottom {
 		height: 30vh;
 		width: 30vh;
+	}
+	.bh-txt {
+		width: 40vh;
+		height:29vh;
 	}
 
 	.project-right-bottom {
 		height: 30vh;
 		width: 30vh;
+	}
+
+	.sf-txt {
+	width: 40vh;
+		height:29vh;
 	}
 
 	.card1 {
@@ -682,7 +697,11 @@ transition: opacity 0.25s;
 		height: 15vh;
 
 	}
-
-
+	.ca-txt {
+		text-align: center;
+	}
+	.bh-txt {
+		font-size: 2.3rem;
+	}
 
 }
