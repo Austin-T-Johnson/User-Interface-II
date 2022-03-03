@@ -6,27 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Austin Johnson</title>
     <link rel="stylesheet" href="style/index.css">
+    <script type="text/javascript" src="index.js" async></script>
 </head>
 
 <body>
     <header>
 
         <nav>
-            <div class="nav-buttons">
-                <button><a href="#">Home</a></button>
-                <button><a href="#about-me">About</a></button>
-                <button><a href="#project-links">Projects</a></button>
-                <button><a href="contact.html">Contact</a></button>
-
+            <div class="nav-button-container">
+                <a href="#"><button class="navbar-buttons">Home</button></a>
+                <a href="#about-text"><button class="navbar-buttons">About</button></a>
+                <a href="#project-links"><button class="navbar-buttons">AV Projects</button></a>
+                <a href="projects.html"><button class="navbar-buttons">GitHub Projects</button></a>
+                <a href="contact.html"><button class="navbar-buttons">Contact</button></a>
             </div>
         </nav>
+
+        <h1>Austin Johnson's Portfolio</h1>
 
     </header>
     <section id="about-text">
 
         <div class="about-me-text">
 
-            <h1>About Me</h1>
+            <h2>About Me</h2>
 
         </div>
 
@@ -41,7 +44,7 @@
         <div class="right">
             <p>Hello, i'm Austin! I have been working in the live entertainment <br> <br> industry for the past 8 years
                 as a audio engineer & VJ. What's a <br><br>VJ you ask? Well it is the person who is running and
-                controlling all <br><br>the graphics for artist during a concert! As much as I love my<br><br> job, the
+                controlling all <br><br>the graphics for artists during a concert! As much as I love my<br><br> job, the
                 hours are very demanding and you are away from home<br><br> more often than not. Since the pandemic hit,
                 I really looked into <br><br>other avenues for work, and the one that kept popping up was
                 <br><br>coding! I am very excited to start this new chapter and can't<br><br> wait to really begin!
@@ -56,39 +59,72 @@
     <section id="projects-box">
 
         <div class="text">
-            <p>Here are some projects I have worked on!</p>
+            <p>Here are some AV projects I have worked on!</p>
         </div>
     </section>
 
     <section id="project-links">
 
-        <div class="project-left-top" style="background-image:url('images/FVR-333.JPG');">
-            
+        <!-- Fever 333 -->
+
+        <div class="fvr-container" id="fvr_container">
+            <div class="fvr333">
+                <img src="images/FVR-333.JPG" id="fvr333" alt="Fever 333 Photo">
+            </div>
+        </div>
+
+        <div class="project-left-top" id="fvr333btn" style="background-image:url('images/FVR-333.JPG');">
+
             <div class="fvr-txt">Fever 333</div>
         </div>
 
-        <div class="project-right-top" style="background-image:url('images/CA.png');">
+        <!-- Chase Atlantic -->
+
+        <div class="ca-container" id="ca_container">
+            <div class="ca-pic">
+                <img src="images/CA.png" id="ca-pic" alt="Chase Atlantic Photo">
+            </div>
+        </div>
+
+        <div class="project-right-top" id="ca-btn" style="background-image:url('images/CA.png');">
             <div class="ca-txt">Chase Atlantic</div>
         </div>
 
-        <div class="project-left-bottom" style="background-image:url('images/BH.JPEG');">
+        <!-- BROCKHAMPTON -->
+
+            <div class="bh-container" id="bh_container">
+                <div class="bh-pic">
+                    <img src="images/BH.JPEG" id="bh-pic" alt="BROCKHAMPTON Photo">
+                </div>
+            </div>
+
+        <div class="project-left-bottom" id="bh-btn" style="background-image:url('images/BH.JPEG');">
             <div class="bh-txt">BROCKHAMPTON</div>
         </div>
 
-        <div class="project-right-bottom" style="background-image:url('images/SF.JPEG');">
+
+        <!-- Senses Fail -->
+
+            <div class="sf-container" id="sf_container">
+                <div class="sf-pic">
+                    <img src="images/SF.JPEG" id="sf-pic" alt="Senses Fail Photo">
+                </div>
+            </div>
+
+        <div class="project-right-bottom" id="sf-btn" style="background-image:url('images/SF.JPEG');">
             <div class="sf-txt">Senses Fail</div>
         </div>
     </section>
 
-    <section id="project-card">
+    <section id="project-btn-section">
 
-        <div class="card-box">
-            <p>Click the card below to view some of my github projects!</p>
+        <div class="github-project-text-box">
+            <p>Click the button below to view some of my github projects!</p>
         </div>
 
-        <div class="card1">
-            <a href="projects.html">Click here to view my github projects!</a>
-        </div>
+        <div class="github-btn-container">
+            <a href="projects.html"><button class="github-btn"> Click here to view my github projects!
+                </button></a>
         </div>
 
     </section>
@@ -130,7 +166,7 @@
             </path>
         </svg>
 
-        <nav>
+        <!-- <nav>
             <div class="nav-buttons">
                 <button><a href="#">Home</a></button>
                 <button><a href="#about-me">About</a></button>
@@ -138,7 +174,7 @@
                 <button><a href="contact.html">Contact</a></button>
 
             </div>
-        </nav>
+        </nav> -->
 
     </footer>
 
