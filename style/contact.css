@@ -17,115 +17,213 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
 
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-	display: block;
+    display: block;
 }
 
 body {
-	line-height: 1;
+    line-height: 1;
 }
 
 ol, ul {
-	list-style: none;
+    list-style: none;
 }
 
 blockquote, q {
-	quotes: none;
+    quotes: none;
 }
 
 blockquote:before, blockquote:after,
 q:before, q:after {
-	content: '';
-	content: none;
+    content: '';
+    content: none;
 }
 
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 * {
-	box-sizing: border-box;
-	padding: 0;
-	margin: 0;
-	max-width: 100%;
-    
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+
 }
 
 html {
-	font-size: 62.5%
-    
+    font-size: 62.5%
 }
 
 body {
-	background-color: #F8F7FF;
+    background-image: url('../images/concrete_wall.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 header {
+    height: 35vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-image: url('../images/senses-fail-bw.png');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav {
 	width: 100%;
-	background-color: white;
+	display: flex;
+	height: 5vh;
 	display: flex;
 	justify-content: center;
 	
-}
-
-.header-img {
-	height: 140px;
-	width: 50%;
-	background-position: center;
-	background-size: cover;
-	margin-top: 1%;
-	background-color: #F8F7FF;
-
-	
-}
-.bit-guy  {
-	height: 150px;
-	width: 260px;
-	background-position: center;
-	background-size: cover;
-	margin: 0 auto;
 	
 }
 
-
-nav {
-	background-color: lightgray;
-	display: flex;
-	height: 5vh;
-	display:flex;
-	justify-content: space-evenly;
-	border: 1px dashed black;
-}
-
-.nav-buttons{
-	
+.nav-button-container {
+	width: 100%;
 	font-size: 3rem;
+	display:flex;
+	justify-content: center;
+	gap: 20px;
+
 }
+
+.navbar-buttons {
+	height: 5vh;
+	width: 8vw;
+	text-decoration: none;	
+	color: black;
+	cursor: pointer;
+}
+
+/* From cssbuttons.io by @namecho */
+button,
+button::after {
+    padding: 16px 20px;
+    font-size: 1.2rem;
+    background: linear-gradient(45deg, transparent 5%, darkgray 5%);
+    border: 0;
+    color: #fff;
+    letter-spacing: .1rem;
+    line-height: 1;
+
+    outline: transparent;
+    position: relative;
+}
+
+button::after {
+    --slice-0: inset(50% 50% 50% 50%);
+    --slice-1: inset(80% -6px 0 0);
+    --slice-2: inset(50% -6px 30% 0);
+    --slice-3: inset(10% -6px 85% 0);
+    --slice-4: inset(40% -6px 43% 0);
+    --slice-5: inset(80% -6px 5% 0);
+    content: "CLICK ME";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, transparent 3%, #5b7475 3%, #273a3b 5%, gray 5%);
+    text-shadow: -3px -3px 0px #f8f005, 3px 3px 0px #263d3f;
+    clip-path: var(--slice-0);
+}
+
+button:hover::after {
+    animation: 1s glitch;
+    animation-timing-function: steps(2, end);
+}
+
+@keyframes glitch {
+    0% {
+        clip-path: var(--slice-1);
+        transform: translate(-20px, -10px);
+    }
+
+    10% {
+        clip-path: var(--slice-3);
+        transform: translate(10px, 10px);
+    }
+
+    20% {
+        clip-path: var(--slice-1);
+        transform: translate(-10px, 10px);
+    }
+
+    30% {
+        clip-path: var(--slice-3);
+        transform: translate(0px, 5px);
+    }
+
+    40% {
+        clip-path: var(--slice-2);
+        transform: translate(-5px, 0px);
+    }
+
+    50% {
+        clip-path: var(--slice-3);
+        transform: translate(5px, 0px);
+    }
+
+    60% {
+        clip-path: var(--slice-4);
+        transform: translate(5px, 10px);
+    }
+
+    70% {
+        clip-path: var(--slice-2);
+        transform: translate(-10px, 10px);
+    }
+
+    80% {
+        clip-path: var(--slice-5);
+        transform: translate(20px, -10px);
+    }
+
+    90% {
+        clip-path: var(--slice-1);
+        transform: translate(-10px, 0px);
+    }
+
+    100% {
+        clip-path: var(--slice-1);
+        transform: translate(0);
+    }
+}
+
+
 
 button {
-	width: 8rem;
-	text-decoration: none;
+    width: 8rem;
+    text-decoration: none;
 }
 
 button a {
-	text-decoration: none;
-	color: black;
+    text-decoration: none;
+    color: black;
 }
 
 
+
 #contact-section {
-    display:flex;
+    display: flex;
     justify-content: center;
     margin-left: 1%;
 }
@@ -137,7 +235,7 @@ button a {
 
 
 .title {
-    font-family:'Studio Manager Big Font';
+    font-family: 'Azonix';
     font-size: 50pt;
     color: black;
     padding: 25px;
@@ -154,7 +252,7 @@ button a {
     margin-bottom: 15px;
     padding: 15px;
     position: relative;
-   
+
 
 }
 
@@ -170,8 +268,8 @@ button a {
     color: #fff;
     border: solid 6px black;
     justify-content: center;
-    font-family:'Studio Manager Big Font';
-    font-size:2rem;
+    font-family: 'Kayak Sans';
+    font-size: 2rem;
 }
 
 .panel-content {
@@ -209,7 +307,7 @@ button a {
     flex-direction: column;
     height: 50px;
     flex: 1;
-  
+
 }
 
 .line-item .lines .line {
@@ -217,8 +315,8 @@ button a {
     flex: 1;
     transition: all .3s ease;
     margin-bottom: 10px;
-    font-family:'Studio Manager Big Font';
-    font-size:1.5rem;
+    font-family: 'Kayak Sans';
+    font-size: 1.5rem;
 }
 
 .line-item .lines .line:last-of-type {
@@ -255,3 +353,24 @@ button a {
     transform: scale(1.01, 1.03)
 }
 
+@media (max-width: 800px) {
+    .panel {
+        max-width: 60%;
+    }
+
+    .panel-top {
+        height: 20%;
+        display: flex;
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 500px) {
+    .panel-top {
+        height: 20%;
+        display: flex;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+}
